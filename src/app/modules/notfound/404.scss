@@ -1,0 +1,39 @@
+.fourOfour{
+  background-image: url('./assets/images/404.svg'), radial-gradient(at left top, #ff6b81 0%, #2e63c7 100% );
+  background-size: cover;
+  height: 100vh;
+  display: block;
+  background-repeat: no-repeat;
+  color: $font-light;
+  display: table;
+  width: 100%;
+}
+
+.fourOfour-content-wrapper{
+  display: table-cell;
+  vertical-align: middle;
+  padding: rem(30);
+
+  img{
+    max-width: 80%;
+  }
+
+  .notfound-heading{
+    position: relative;
+    top: -50px;
+    @include font-size(36);
+  }
+
+  .notfound-subheading{
+    @include font-size(16);
+    margin-bottom: rem(26);
+  }
+
+  .btn-bordered{
+    margin-top: rem(10);
+    color: $font-light;
+    background-color: transparent;
+    border: 1px solid $font-light;
+  }
+}
+

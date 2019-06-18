@@ -1,0 +1,5 @@
+applications:
+- name: q2c-advisor
+  route-path: true
+  memory: 1024M
+  buildpack: staticfile_buildpack
