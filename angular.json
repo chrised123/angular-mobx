@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Q2CClient": {
+    "AngularMobx": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Q2CClient:build"
+            "browserTarget": "AngularMobx:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Q2CClient:build:production"
+              "browserTarget": "AngularMobx:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Q2CClient:build"
+            "browserTarget": "AngularMobx:build"
           }
         },
         "test": {
@@ -111,7 +111,7 @@
         }
       }
     },
-    "Q2CClient-e2e": {
+    "AngularMobx-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -120,11 +120,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Q2CClient:serve"
+            "devServerTarget": "AngularMobx:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Q2CClient:serve:production"
+              "devServerTarget": "AngularMobx:serve:production"
             }
           }
         },
@@ -140,5 +140,5 @@
       }
     }
   },
-  "defaultProject": "Q2CClient"
+  "defaultProject": "AngularMobx"
 }
