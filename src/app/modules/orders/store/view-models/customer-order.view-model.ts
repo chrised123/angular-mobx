@@ -1,4 +1,4 @@
-import { Order } from 'src/app/shared/store/view-models/order.view-model';
+import { Order } from './../../../../shared/store/view-models/order.view-model';
 
 export class CustomerOrder extends Order {
   customerName: string;

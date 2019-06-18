@@ -1,5 +1,5 @@
 import { Address } from './address.view-model';
-import { Order } from 'src/app/shared/store/view-models/order.view-model';
+import { Order } from './../../../../shared/store/view-models/order.view-model';
 
 export class CustomerObject {
   id: any;

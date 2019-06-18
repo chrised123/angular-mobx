@@ -4,9 +4,6 @@
 
 export const environment = {
   production: false,
-  watsonApiUrl: 'http://q2c-{0}-dev-watson-svc.w3ibm.mybluemix.net/sts/common/watson',
-  url: 'q2c-squad-dev',
-  urlnew: 'sts-redesign',
   port: 4200
 };
 

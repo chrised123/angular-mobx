@@ -1,7 +1,6 @@
 import { Injectable, TemplateRef } from '@angular/core';
 import { autorun, observable, action, reaction } from 'mobx';
-import { Order } from 'src/app/shared/store/view-models/order.view-model';
-import { CustomersDummy } from 'src/app/modules/customers/store/data/customers.dummy';
+import { CustomersDummy } from '../../../customers/store/data/customers.dummy';
 import { CustomerOrder } from '../view-models/customer-order.view-model';
 @Injectable()
 export class OrdersViewState {
