@@ -28,7 +28,6 @@
             ],
             "styles": [
               "./node_modules/bootstrap/scss/bootstrap.scss",
-              "src/assets/fonts/deskera-fonts/deskera-fonts.scss",
               "src/styles.scss"
             ],
             "scripts": []
