@@ -28,8 +28,7 @@
             ],
             "styles": [
               "./node_modules/bootstrap/scss/bootstrap.scss",
-              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.scss",
-              "./node_modules/@mdi/font/scss/materialdesignicons.scss",
+              "src/assets/fonts/deskera-fonts/deskera-fonts.scss",
               "src/styles.scss"
             ],
             "scripts": []

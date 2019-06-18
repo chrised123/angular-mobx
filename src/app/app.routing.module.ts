@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
   { path: 'app', loadChildren: './core/core.module#CoreModule' },
-  { path: '', redirectTo: '/app', pathMatch: 'prefix' },
+  { path: '', redirectTo: 'app', pathMatch: 'prefix' },
   { path: '404', loadChildren: './modules/notfound/notfound.module#NotfoundModule' },
   { path: '**', redirectTo: '404' }
 ];
