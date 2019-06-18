@@ -1,0 +1,31 @@
+.customer-card{
+  margin-bottom: 20px;
+
+  .card-header{
+    background-color: $main-accent-2;
+
+    .external-link a{
+      color: $font-light;
+
+      &:hover, &:focus{
+        color: darken($font-light, 10%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .customer-image{
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .orders-link{
+    color: darken($secondary-accent-2, 20%);
+    font-weight: 700;
+
+    &:hover, &:focus{
+      color: $secondary-accent-2;
+      text-decoration: none;
+    }
+  }
+}

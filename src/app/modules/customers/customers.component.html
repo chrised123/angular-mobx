@@ -1,3 +1,7 @@
 <div class="customes-list">
-    <app-customer *ngFor="let item of viewState.customers.list" [customer]="item"></app-customer>
+  <div class="container">
+    <div class="row">
+      <app-customer *ngFor="let item of viewState.customers.list" [customer]="item" class="col-sm-3"></app-customer>
+    </div>
+  </div>
 </div>

@@ -1,7 +1,7 @@
 .fourOfour{
-  background-image: url('./assets/images/404.svg'), radial-gradient(at left top, #ff6b81 0%, #2e63c7 100% );
+  background-image: radial-gradient(at left top, $header-bg 0%, darken(#2A4CB5, 10%) 100% );
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 60px);
   display: block;
   background-repeat: no-repeat;
   color: $font-light;
@@ -13,14 +13,15 @@
   display: table-cell;
   vertical-align: middle;
   padding: rem(30);
+  position: relative;
+  top: -50px;
 
-  img{
-    max-width: 80%;
+  h1{
+    @include font-size(60);
   }
 
   .notfound-heading{
     position: relative;
-    top: -50px;
     @include font-size(36);
   }
 

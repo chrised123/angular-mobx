@@ -13,7 +13,7 @@ export class NavItems {
             class: '',
             navClass: 'nav-link',
             module: 'Orders',
-            link: ['/app/dashboard']
+            link: ['/app/orders']
         }, {
             id: 'about',
             innerHTML: '',

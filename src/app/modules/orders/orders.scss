@@ -1,0 +1,17 @@
+.orders-list{
+  margin-top: 50px;
+
+  .order-customer{
+    color: darken($secondary-accent-2, 20%);
+
+    &:hover, &:focus{
+      color: $secondary-accent-2;
+      text-decoration: none;
+    }
+  }
+
+  .order-customer-image{
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}

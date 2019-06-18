@@ -10,8 +10,17 @@ export class CustomersViewState {
     autorun(
       (autorunReaction) => {
         this.customers = new CustomersDummy();
+        console.log(this.customers);
         autorunReaction.dispose();
       }
     );
+  }
+
+  getDetails = (id) => {
+    console.log(id);
+    const filter = this.customers.list.filter(item => {
+      return item.id == id;
+    });
+    return filter[0]
   }
 }

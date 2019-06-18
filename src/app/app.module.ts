@@ -6,8 +6,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-import { AlertModule, BsDropdownModule } from 'ngx-bootstrap';
-import { ModalModule } from 'ngx-bootstrap';
+import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,9 +19,7 @@ import { ModalModule } from 'ngx-bootstrap';
     AppRoutingModule,
     SharedModule.forRoot(),
     AlertModule.forRoot(),
-    CoreModule.forRoot(),
-    BsDropdownModule.forRoot(),
-    ModalModule.forRoot()
+    CoreModule.forRoot()
   ],
   exports: [
     ReactiveFormsModule,

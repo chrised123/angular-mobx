@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: 'customers', loadChildren: '../modules/customers/customers.module#CustomersModule' }
+  { path: 'customer', loadChildren: '../modules/customers/customers.module#CustomersModule' },
+  { path: 'orders', loadChildren: '../modules/orders/orders.module#OrdersModule' },
+  { path: '', redirectTo: 'customer', pathMatch: 'prefix'},
 ];
 
 @NgModule({

@@ -1,0 +1,78 @@
+<div class="customer-detail">
+  <div class="container">
+    <div class="row">
+      <h3 class="col">
+        <span class="customer-detail-icon-wrapper"><i class="icon-customer"></i></span>
+        Customer Information
+      </h3>
+    </div>
+    <div class="row customer-tabs">
+      <div class="col">
+        <tabset type="pills" #staticTabs>
+          <tab>
+            <ng-template tabHeading>
+              <i class="icon-details"></i> Customer details
+            </ng-template>
+            <div class="content">
+              <div class="row no-gutters">
+                <div class="col-sm-3">
+                    <img [src]="customer.image" alt="">
+                </div>
+                <div class="col-sm-9">
+                  <h5>{{customer.name}}</h5>
+                  <p>
+                    {{customer.address.addressLine1}}, {{customer.address.addressLine2}},
+                    <br>
+                    {{customer.address.city}},
+                    <br>
+                    {{customer.address.state}},
+                    <br>
+                    {{customer.address.country}} - {{customer.address.zipcode}}
+                  </p>
+                </div>
+              </div>
+              <div class="row-no-gutters">
+                <iframe width="600" height="450" frameborder="1" style="border:2px"
+                [src]="this.generateUrl(customer.address)" allowfullscreen></iframe>
+              </div>
+            </div>
+          </tab>
+          <tab>
+            <ng-template tabHeading>
+              <i class="icon-orders"></i> Customer orders
+            </ng-template>
+            <div class="content">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Order name</th>
+                    <th scope="col">Order description</th>
+                    <th scope="col">Order date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of customer.orders">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.description}}</td>
+                    <td>{{item.date | date:'longDate'}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </tab>
+          <tab>
+            <ng-template tabHeading>
+              <i class="icon-edit"></i> Edit customer
+            </ng-template>
+            <div class="content">
+
+            </div>
+          </tab>
+        </tabset>
+      </div>
+    </div>
+  </div>
+</div>
+

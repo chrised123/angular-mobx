@@ -1,0 +1,21 @@
+.customer-detail{
+  margin-top: 50px;
+
+  .customer-tabs{
+    margin-top: 50px;
+  }
+
+  .nav-pills .nav-link, .nav-pills > .nav-link{
+    color: $main-accent-2;
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    color: $font-light;
+    background-color: $main-accent-2;
+  }
+
+  .tab-content{
+    margin-top: 30px;
+  }
+
+}
