@@ -10,7 +10,6 @@ export class OrdersComponent implements OnInit {
   constructor(public viewState: OrdersViewState) { }
 
   ngOnInit() {
-    console.log(JSON.parse(JSON.stringify(this.viewState.orders)));
   }
 
 }

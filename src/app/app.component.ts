@@ -10,7 +10,6 @@ export class AppComponent {
     protected core: CoreDomainState
   ) {
     core = new CoreDomainState();
-    console.log(core);
   }
   app = {
     title: 'Customer manager'

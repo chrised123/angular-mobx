@@ -9,11 +9,11 @@
   </div>
   <div class="card-body p-3">
     <div class="row no-gutters">
-      <div class="col-md-3 customer-image" [ngStyle]="{'background-image': 'url(' + customer.image + ')'}">
+      <div class="col-3 customer-image" [ngStyle]="{'background-image': 'url(' + customer.image + ')'}">
         <!-- I am using bg image instead of img tag here because, the images will not be of fixed width and height -->
         <!-- <img [src]="customer.image" alt="" class="card-img"> -->
       </div>
-      <div class="col-md-9">
+      <div class="col-9">
         <p class="card-text pl-3">
           {{customer.address.city}},
           <br>

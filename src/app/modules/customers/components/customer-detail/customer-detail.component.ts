@@ -21,7 +21,6 @@ export class CustomerDetailComponent implements OnInit {
   ngOnInit() {
     this.routeSub = this.route.params.subscribe(params => {
       this.customer = this.viewState.getDetails(params['id']);
-      console.log(this.customer)
     });
 
     this.route.fragment.subscribe((fragment: string) => {

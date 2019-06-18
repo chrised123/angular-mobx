@@ -1,26 +1,28 @@
 <div class="orders-list">
   <div class="container">
     <div class="row">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Order name</th>
-            <th scope="col">Customer name</th>
-            <th scope="col">Order description</th>
-            <th scope="col">Order date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of viewState.orders">
-            <td>{{item.id}}</td>
-            <td>{{item.name}}</td>
-            <td><a [routerLink]="item.customerUrl" class="order-customer"><img [src]="item.customerImage" alt="" width="28" height="28" class="order-customer-image">{{item.customerName}}</a></td>
-            <td>{{item.description}}</td>
-            <td>{{item.date | date:'longDate'}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Order name</th>
+              <th scope="col">Customer name</th>
+              <th scope="col">Order description</th>
+              <th scope="col">Order date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of viewState.orders">
+              <td>{{item.id}}</td>
+              <td>{{item.name}}</td>
+              <td><a [routerLink]="item.customerUrl" class="order-customer"><img [src]="item.customerImage" alt="" width="28" height="28" class="order-customer-image">{{item.customerName}}</a></td>
+              <td>{{item.description}}</td>
+              <td>{{item.date | date:'longDate'}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
